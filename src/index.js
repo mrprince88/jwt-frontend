@@ -1,8 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 import App from "./App";
 
-// eslint-disable-next-line no-undef
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// eslint-disable-next-line react/jsx-filename-extension
-root.render(<App />);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+
+reportWebVitals();
